@@ -1,5 +1,5 @@
 import 'package:bridge_maintenence/routes/alertpage.dart';
-import 'package:bridge_maintenence/routes/sensorlocat.dart';
+import 'package:bridge_maintenence/routes/maintenance.dart';
 import 'package:bridge_maintenence/routes/sensorpage.dart';
 import 'package:bridge_maintenence/routes/teampage.dart';
 import 'package:flutter/material.dart';
@@ -73,10 +73,10 @@ class _DashboardState extends State<Dashboard> {
               onTap: () => _navigateTo(context, const AlertsPage()),
             ),
             _buildDashboardCard(
-              title: 'Sensor Locations',
+              title: 'Maintennance',
               color: const Color(0xFFB3E5FC), // Pastel Blue
-              icon: Icons.location_on,
-              onTap: () => _navigateTo(context, const SensorLocationsPage()),
+              icon: Icons.build,
+              onTap: () => _navigateTo(context, const MaintenanceDate()),
             ),
             _buildDashboardCard(
               title: 'Sensors',
